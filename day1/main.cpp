@@ -11,8 +11,9 @@ pair<vector<int>, vector<int>> readCsv(const string &filename);
 void sortList(std::vector<int> &array);
 long long totalDistance(std::vector<int> lList, std::vector<int> rList);
 
-int main(void) {
-  auto [left, right] = readCsv("input");
+int main(int argc, char *argv[]) {
+  cout << argv[1] << endl;
+  auto [left, right] = readCsv(argv[1]);
   sortList(left);
   sortList(right);
   int totalDist = totalDistance(left, right);
