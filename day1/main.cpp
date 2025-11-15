@@ -9,7 +9,7 @@ using namespace std;
 
 pair<vector<int>, vector<int>> readCsv(const string &filename);
 void sortList(std::vector<int> &array);
-int totalDistance(std::vector<int> lList, std::vector<int> rList);
+long long totalDistance(std::vector<int> lList, std::vector<int> rList);
 
 int main(void) {
   auto [left, right] = readCsv("input.csv");
@@ -65,7 +65,7 @@ void sortList(std::vector<int> &array) {
   }
 }
 
-int totalDistance(std::vector<int> lList, std::vector<int> rList) {
+long long totalDistance(std::vector<int> lList, std::vector<int> rList) {
   int totalDistance = 0;
   int leftListSize = lList.size();
   for (int i = 0; i < leftListSize; i++) {
