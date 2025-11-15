@@ -12,7 +12,7 @@ void sortList(std::vector<int> &array);
 long long totalDistance(std::vector<int> lList, std::vector<int> rList);
 
 int main(void) {
-  auto [left, right] = readCsv("input.csv");
+  auto [left, right] = readCsv("input");
   sortList(left);
   sortList(right);
   int totalDist = totalDistance(left, right);
